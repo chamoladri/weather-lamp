@@ -10,3 +10,4 @@ buneosAires = pywapi.get_weather_from_weather_com('ARBA0009:1:AR')
 #print buneosAires
 
 print buneosAires['current_conditions']['temperature']
+print buneosAires['current_conditions']['temperature']
