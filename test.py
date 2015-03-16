@@ -1,4 +1,6 @@
-import sys
-print "mauro"
-for o in range(1,10):
-    print o
+import pywapi
+import pprint
+pp = pprint.PrettyPrinter(indent=4)
+
+result = pywapi.get_weather_from_yahoo('10001', 'metric')
+pp.pprint(result)
