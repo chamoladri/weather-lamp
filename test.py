@@ -1,6 +1,12 @@
+
 import pywapi
 import pprint
+
 pp = pprint.PrettyPrinter(indent=4)
 
-result = pywapi.get_weather_from_yahoo('10001', 'metric')
-pp.pprint(result)
+buneosAires = pywapi.get_weather_from_weather_com('ARBA0009:1:AR')
+
+#pp.pprint(buneosAires)
+#print buneosAires
+
+print buneosAires['current_conditions']['temperature']
